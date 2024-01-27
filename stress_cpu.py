@@ -4,6 +4,7 @@ import time
 
 # Do intensive computation to stress the CPU
 def stress_cpu(n):
+    print("stress test script")
     total = 0
     for i in range(n):
         total += i**2

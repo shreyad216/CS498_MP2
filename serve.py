@@ -8,7 +8,7 @@ def handle_requests():
     if request.method == 'POST':
         # Handle POST request to stress CPU
         print("CPU stress test")
-        stress_process = subprocess.Popen(['python', 'stress_cpu.py'])
+        stress_process = subprocess.Popen(['python3', 'stress_cpu.py'])
         #return jsonify({'status': 'CPU stress initiated'})
         return "CPU stress initiated"
     else:

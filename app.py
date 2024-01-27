@@ -14,7 +14,7 @@ def login():
     if request.method == 'POST':
         #seed = request.form['nm']
         #seed = request.json.get('num')
-        seed_r = request.get_json()
+        seed_r = request.json()
         seed = int(seed_r["num"])
         print("POST %s", seed)
        # return render_template('index.html', seed = 'updated')
